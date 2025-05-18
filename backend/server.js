@@ -17,6 +17,7 @@ app.use(cors({
   origin: [
     'http://localhost:3000', // for development
     'https://tasklist-frontend.onrender.com', // for deployed frontend
+    'https://tasklist-nodejs-tasklist-frontend.onrender.com',
   ],
   credentials: true,
 }));
