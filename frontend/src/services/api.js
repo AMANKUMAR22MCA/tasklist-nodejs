@@ -3,7 +3,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // or your backend URL
+  // baseURL: 'http://localhost:5000/api', // or your backend URL
+  baseURL: 'https://tasklist-nodejs-api.vercel.app/api';
 });
 
 // Add an interceptor to include token in headers
