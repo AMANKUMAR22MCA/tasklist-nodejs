@@ -15,12 +15,11 @@ const JWT_SECRET = process.env.JWT_SECRET;
 // CORS configuration (adjust the origin for production)
 app.use(cors({
   origin: [
-    'http://localhost:3000',
-    'https://tasklist-frontend.onrender.com', // <-- Add your actual frontend domain
+    'http://localhost:3000', // for development
+    'https://tasklist-frontend.onrender.com', // for deployed frontend
   ],
   credentials: true,
-});
-
+}));
 
 app.use(express.json()); // Parse JSON bodies
 
