@@ -4,7 +4,8 @@ A full-stack Task Manager web application where users can manage  tasks with aut
 
 ## 🚀 Live Demo
 
-> 🌐 **Frontend**: [https://tasklist-nodejs-tasklist-frontend.onrender.com](https://tasklist-nodejs-tasklist-frontend.onrender.com)  
+> 🌐 **Frontend**: [https://tasklist-nodejs-tasklist-frontend.onrender.com](https://tasklist-nodejs-tasklist-frontend.onrender.com)
+> The backend server is hosted on Render's free tier, which may take some seconds to connect . Thanks for your patience!
 
 
 ---
