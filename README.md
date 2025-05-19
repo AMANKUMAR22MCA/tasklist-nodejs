@@ -100,6 +100,18 @@ to test locally keep this  baseURL: 'http://localhost:5000/api',
 // For production:
 baseURL: '<your_deployed_ip>/api',
 ```
+```
+in backend/server.js 
+update the cros url for  production
+app.use(cors({
+  origin: [
+    'http://localhost:3000', // for local development keep this for local testing
+    'https://tasklist-frontend.onrender.com', // for deployed frontend
+    'https://tasklist-nodejs-tasklist-frontend.onrender.com', // add deployed fronend url
+  ],
+  credentials: true,
+}));
+```
 
 ---
 
