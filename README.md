@@ -5,7 +5,7 @@ A full-stack Task Manager web application where users can manage  tasks with aut
 ## 🚀 Live Demo
 
 > 🌐 **Frontend**: [https://tasklist-nodejs-tasklist-frontend.onrender.com](https://tasklist-nodejs-tasklist-frontend.onrender.com)  
-> 🌐 **Backend**: [https://tasklist-nodejs-b6nt.onrender.com](https://tasklist-nodejs-b6nt.onrender.com)
+
 
 ---
 
@@ -71,10 +71,17 @@ npm install
 Create a `.env` file inside the `backend` folder with the following variables:
 
 ```
+
 MONGO_URI=your_mongodb_atlas_uri
 JWT_SECRET=your_jwt_secret
 ```
-
+```
+setup the mongdb_atlas through this video guide: https://www.youtube.com/watch?v=qXEmKQsD6qA
+mongodb atlas link :https://www.mongodb.com/products/platform/atlas-database
+create database here following video you will get 
+MONGO_URI=mongodb+srv://yourusername:password@cluster0.umrf0km.mongodb.net/yourdatabse?retryWrites=true&w=majority
+create a jwt_scret key  : https://jwtsecret.com/generate
+```
 ---
 
 ### 3️⃣ Frontend Setup (React.js)
@@ -89,9 +96,9 @@ Update the `baseURL` in `frontend/src/api.js` depending on your environment:
 ```js
 // For local development:
 // baseURL: 'http://localhost:5000/api',
-
+to test locally keep this  baseURL: 'http://localhost:5000/api', 
 // For production:
-baseURL: 'https://tasklist-nodejs-b6nt.onrender.com/api',
+baseURL: '<your_deployed_ip>/api',
 ```
 
 ---
@@ -117,9 +124,6 @@ Then, open your browser and navigate to:
 
 ---
 
-## 🌐 Live Demo
-
-👉 [Try it on Render](https://tasklist-nodejs-b6nt.onrender.com)
 
 ---
 
